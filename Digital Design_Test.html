@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Design_Test by LifeNewer</title>
+  <link rel="stylesheet" href="Digital Design_Test.css">
+</head>
+<body class="light">
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="logo.jpg" alt="Digital Design_Test by LifeNewer">
+      </div>
+	  <h1>Digital Design_Test by LifeNewer</h1>
+      <nav id="category-menu">
+        <ul>
+          <li><button id="all-categories">Все категории</button></li>
+          <li><a href="#fruits">Фрукты</a></li>
+          <li><a href="#vegetables">Овощи</a></li>
+          <li><a href="#animals">Животные</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle">Сменить тему</button>
+      <button id="scroll-to-top">Наверх</button>
+    </div>
+  </header>
+</body>
+</html>
+
+  <nav id="category-menu">
+    <ul>
+      <li><button id="all-categories">Все категории</button></li>
+      <li><a href="#fruits">Фрукты</a></li>
+      <li><a href="#vegetables">Овощи</a></li>
+      <li><a href="#animals">Животные</a></li>
+    </ul>
+  </nav>
+
+ 
+
+  <main>
+    <section id="fruits">
+  <h2>Фрукты</h2>
+  <div class="product-card" data-product-id="1" data-category-id="fruits">
+    <img src="product1.jpg" alt="Товар 1">
+    <div class="product-info">
+      <h3>Товар 1</h3>
+      <p class="date-added">Дата добавления: <span class="date"></span></p>
+      <button class="buy-btn">Купить</button>
+      <button class="add-to-category" data-product-id="1" data-category-id="fruits">Добавить товар</button>
+    </div>
+  </div>
+  <!-- Дополнительные карточки товаров -->
+</section>
+
+<section id="vegetables">
+  <h2>Овощи</h2>
+  <div class="product-card" data-product-id="2" data-category-id="vegetables">
+    <img src="product2.jpg" alt="Товар 2">
+    <div class="product-info">
+      <h3>Товар 2</h3>
+      <p class="date-added">Дата добавления: <span class="date"></span></p>
+      <button class="buy-btn">Купить</button>
+      <button class="add-to-category" data-product-id="2" data-category-id="vegetables">Добавить товар</button>
+    </div>
+  </div>
+  <!-- Дополнительные карточки товаров -->
+</section>
+
+<section id="animals">
+  <h2>Животные</h2>
+  <div class="product-card" data-product-id="3" data-category-id="animals">
+    <img src="product3.jpg" alt="Товар 3">
+    <div class="product-info">
+      <h3>Товар 3</h3>
+      <p class="date-added">Дата добавления: <span class="date"></span></p>
+      <button class="buy-btn">Купить</button>
+      <button class="add-to-category" data-product-id="3" data-category-id="animals">Добавить товар</button>
+    </div>
+  </div>
+  <!-- Дополнительные карточки товаров -->
+</section>
+  </main>
+
+  <footer>
+    <ul id="category-list">
+      <li><a href="#fruits">Фрукты</a></li>
+      <li><a href="#vegetables">Овощи</a></li>
+      <li><a href="#animals">Животные</a></li>
+    </ul>
+  </footer>
+
+  <div id="buy-form-overlay">
+    <div id="buy-form">
+      <h2>Форма покупки</h2>
+      <form>
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" min="1" required>
+        <label>Цвет:</label>
+        <label><input type="radio" name="color" value="red"> Красный</label>
+        <label><input type="radio" name="color" value="blue"> Синий</label>
+        <label><input type="radio" name="color" value="green"> Зеленый</label>
+        <label>Комментарий:</label>
+        <textarea id="comment" maxlength="2000"></textarea>
+        <button type="submit">Купить</button>
+        <button type="button" id="close-form">Закрыть</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="Digital Design_Test.js"></script>
+</body>
+</html>
